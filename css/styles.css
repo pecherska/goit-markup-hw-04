@@ -372,6 +372,7 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  margin-bottom: 20px;
 }
 
 .address > a {
@@ -388,8 +389,17 @@ p {
   text-decoration: none;
 }
 
+.address .contact.map {
+  color: var(--primary-white-color);
+  margin-bottom: 9px;
+}
+
 .contact:last-child {
   margin-bottom: 0;
+}
+
+.social-section {
+  padding-left: 70px;
 }
 
 /* Проекты */
@@ -484,19 +494,39 @@ img {
 
 /* Icons */
 
+/* Иконки навигации */
+
+.auth-nav-item.link {
+  display: flex;
+  align-items: center;
+}
+
+.auth-nav.icon {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+
+.auth-nav-item.link:hover .icon,
+.auth-nav-item.link:focus .icon {
+  fill: var(--accent-color);
+}
+
+/* .auth-nav.icon:hover,
+.auth-nav.icon:focus {
+  fill: var(--accent-color);
+} */
+
+/* Иконки преимуществ  */
+
 .feature-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-
   background-color: #f5f4fa;
 }
 
-.icon-antenna,
-.icon-clock,
-.icon-computer,
-.icon-astronaut {
+.feature-icon-list {
   margin: 25px 100px;
   width: 70px;
   height: 70px;
@@ -525,20 +555,78 @@ img {
   border-radius: 50%;
 
   margin-right: 10px;
-}
-
-.social-list.icon:hover {
-  fill-opacity: var(--primary-white-color);
-
-  background-color: var(--accent-color);
+  fill: #afb1b8;
 }
 
 .icon-logo {
-  fill: #afb1b8;
   width: 20px;
   height: 20px;
 }
 
+.social-list.icon:hover,
+.social-list.icon:focus {
+  fill: var(--primary-white-color);
+
+  background-color: var(--accent-color);
+}
+
 .social-list.icon:last-child {
   margin-right: 0;
+}
+
+/* Иконки футера */
+
+.social-list-item-footer {
+  display: flex;
+}
+
+.icon-logo.footer-item {
+  fill: var(--primary-white-color);
+}
+
+.social-list.icon.join {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list.icon.join:hover,
+.social-list.icon.join:focus {
+  background-color: var(--accent-color);
+}
+
+/* Клиенты */
+
+.clients.list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-item {
+  margin-right: 30px;
+}
+.clients-item:last-child {
+  margin-right: 0px;
+}
+
+.clients-item .clients-item-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 94px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.company {
+  fill: #afb1b8;
+}
+
+.clients-item .clients-item-company:hover,
+.clients-item .clients-item-company:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-item .clients-item-company:hover .company,
+.clients-item .clients-item-company:focus .company {
+  fill: var(--accent-color);
 }
