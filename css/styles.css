@@ -360,8 +360,6 @@ p {
 }
 
 .footer {
-  display: flex;
-  align-items: baseline;
   background-color: var(--bg-color-footer);
 
   padding-top: 60px;
@@ -423,6 +421,7 @@ img {
 }
 
 .project-link {
+  display: block;
   width: 370px;
 }
 
@@ -535,7 +534,9 @@ img {
   align-items: center;
   margin-bottom: 30px;
 
-  width: 120px;
+  height: 120px;
+  background-color: var(--bg-color-secondar);
+  border-radius: 4px;
 }
 
 .feature-icon-list {
